@@ -4,11 +4,11 @@ class Solution:
         if len(sentence)<26:
             return False
         
-        MyDict = {}
+        mset = set()
         
         for letter in sentence:
-            if letter not in MyDict:
-                MyDict[letter] = 1
+            if letter not in mset:
+                mset.add(letter)
                 
-        return len(MyDict.keys()) >=26
+        return len(mset) >=26
         
