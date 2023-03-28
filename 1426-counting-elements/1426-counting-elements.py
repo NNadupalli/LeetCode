@@ -9,5 +9,6 @@ class Solution:
                 count += 1
         return count
         
-
+#Time complexity : O(n)
+#Space complexity: O(n)
         
