@@ -14,4 +14,6 @@ class Solution:
             
         return
         
+        #Time complexity : O(n)
+        #speca complexity: O(1)
         
