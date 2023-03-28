@@ -1,12 +1,10 @@
 class Solution:
     def repeatedCharacter(self, s: str) -> str:
-        Mydict = {}
+        Mset  = set()
 
         for sa in s:
-            if sa in Mydict :
-                Mydict[sa] += 1
-                if Mydict[sa] ==2:
-                    return sa
+            if sa in Mset :
+                return sa
             else:
-                Mydict[sa] = 1
+                Mset.add(sa)
         return 
